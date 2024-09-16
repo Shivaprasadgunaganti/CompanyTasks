@@ -1,4 +1,4 @@
-.input-data {
+/* .input-data {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,6 +37,74 @@ li {
 
 button {
   margin-left: 10px;
+}
+
+#filled-basic {
+  color: rgb(243, 85, 50);
+}
+
+@media screen and (max-width: 320px) {
+  .input-data {
+    margin-left: 70px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .input-data {
+    margin-left: 90px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 2560px) {
+  .input-data {
+    margin-left: 60px;
+  }
+} */
+
+
+.input-data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.api-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.child-data {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 10px;
+}
+
+li {
+  list-style: none;
+  background-color: rgb(205, 234, 43);
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+button {
+  margin: 0; /* Reset margin to ensure consistent alignment */
+  padding: 5px 10px; /* Adjust padding for consistent button size */
+  min-width: 80px; /* Ensure all buttons have the same minimum width */
 }
 
 #filled-basic {

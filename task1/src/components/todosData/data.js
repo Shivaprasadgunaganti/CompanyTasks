@@ -14,9 +14,8 @@ export const Data = () => {
   const dispatch = useDispatch();
   const todosData = useSelector((state) => state.todo.data);
 
-
   useEffect(() => {
-    const savedTodos = JSON.parse(localStorage.getItem('todos'));
+    const savedTodos = JSON.parse(localStorage.getItem("todos"));
     if (savedTodos) {
       dispatch(fetchData(savedTodos));
     } else {
@@ -26,11 +25,9 @@ export const Data = () => {
 
   useEffect(() => {
     if (todosData.length > 0) {
-      localStorage.setItem('todos', JSON.stringify(todosData));  
+      localStorage.setItem("todos", JSON.stringify(todosData));
     }
   }, [todosData]);
-
-  
 
   const handleAddTodo = () => {
     if (data.trim()) {
@@ -39,7 +36,7 @@ export const Data = () => {
       confetti({
         particleCount: 100,
         spread: 70,
-        origin: { y: 0.6 }
+        origin: { y: 0.6 },
       });
     }
   };
@@ -52,7 +49,7 @@ export const Data = () => {
       confetti({
         particleCount: 100,
         spread: 70,
-        origin: { y: 0.6 }
+        origin: { y: 0.6 },
       });
     }
   };
@@ -73,7 +70,7 @@ export const Data = () => {
           onChange={(e) => setData(e.target.value)}
           style={{ width: 200 }}
         />
-        <Button variant="contained" onClick={handleAddTodo}  className="add">
+        <Button variant="contained" onClick={handleAddTodo} className="add">
           Add
         </Button>
       </div>
@@ -94,8 +91,8 @@ export const Data = () => {
                       onChange={(e) => setEdited(e.target.value)}
                     />
                     <Button
-                      variant="contained" 
-                      sx={{':hover':{backgroundColor:'orange'}}}
+                      variant="contained"
+                      sx={{ ":hover": { backgroundColor: "orange" } }}
                       onClick={() => handleUpdateTodo(todo.id)}
                     >
                       Update
@@ -105,8 +102,8 @@ export const Data = () => {
                   <div className="li">
                     <span>{todo.todo}</span>
                     <Button
-                      variant="contained" 
-                      sx={{'&:hover': {backgroundColor:'black'}}}
+                      variant="contained"
+                      sx={{ "&:hover": { backgroundColor: "black" } }}
                       onClick={() => {
                         setEdit(todo.id);
                         setEdited(todo.todo);
@@ -116,7 +113,7 @@ export const Data = () => {
                     </Button>
                     <Button
                       variant="contained"
-                      sx={{':hover':{backgroundColor:'chocolate'}}}
+                      sx={{ ":hover": { backgroundColor: "chocolate" } }}
                       onClick={() => handleDeleteTodo(todo.id)}
                     >
                       Delete
