@@ -45,7 +45,7 @@ button {
 
 @media screen and (max-width: 320px) {
   .input-data {
-    margin-left: 70px;
+    margin-left: 50px;
     margin-top: 10px;
   }
 }
@@ -86,34 +86,38 @@ button {
 
 li {
   list-style: none;
-  background-color: rgb(205, 234, 43);
+  background-color: rgb(187, 233, 141);
   padding: 10px;
   margin-bottom: 5px;
   border-radius: 10px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  /* color: red; */
 }
 
 .li {
   display: flex;
-  align-items: center;
+  flex-direction: column; 
   gap: 10px;
-}
-
-button {
-  margin: 0; /* Reset margin to ensure consistent alignment */
-  padding: 5px 10px; /* Adjust padding for consistent button size */
-  min-width: 80px; /* Ensure all buttons have the same minimum width */
+  width: 100%;
 }
 
 #filled-basic {
   color: rgb(243, 85, 50);
+  width: 100%; 
+}
+
+button {
+  margin: 0;
+  padding: 5px 10px;
+  min-width: 80px;
+  align-self: flex-end; 
 }
 
 @media screen and (max-width: 320px) {
   .input-data {
-    margin-left: 70px;
+    margin-left: 40px;
     margin-top: 10px;
   }
 }

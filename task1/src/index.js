@@ -6,7 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import { Provider } from "react-redux";
 import { store } from "./components/store";
 
-document.title='TODO APP'
+// document.title='TODO APP'
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

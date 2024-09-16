@@ -103,7 +103,7 @@ export const Data = () => {
                     <span>{todo.todo}</span>
                     <Button
                       variant="contained"
-                      sx={{ "&:hover": { backgroundColor: "black" } }}
+                      sx={{ "&:hover": { backgroundColor: "red" } }}
                       onClick={() => {
                         setEdit(todo.id);
                         setEdited(todo.todo);
