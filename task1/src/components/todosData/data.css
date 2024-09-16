@@ -115,14 +115,14 @@ button {
   align-self: flex-end; 
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 425px) {
   .input-data {
     margin-left: 40px;
     margin-top: 10px;
   }
 }
 
-@media screen and (min-width: 321px) and (max-width: 768px) {
+@media screen and (min-width: 426px) and (max-width: 768px) {
   .input-data {
     margin-left: 90px;
     margin-top: 10px;
